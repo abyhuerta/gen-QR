@@ -8,7 +8,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Ubuntu&display=swap"
+    rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,234 +20,222 @@
 
 <body>
 
-  <!-- <section> -->
-    <nav class="navbar navbar-expand-lg fixed-top " data-bs-theme="light">
-      <div class="container-fluid">
-        <div class = "navbar-left">
+  <nav class="navbar navbar-expand-lg fixed-top " data-bs-theme="light">
+    <div class="container-fluid">
+      <div class="navbar-left">
         <a class="navbar-brand" href="#">
-          <!-- <img id="logo" src="img/tinyguy.png"> -->
-          <!-- <i class="bi bi-qr-code"></i> -->
           Gen QR
         </a>
-        </div>
-        <ul class="nav navbar-nav navbar-right ">
-          <li><a href="https://github.com/abyhuerta"><i class="bi bi-github"></i></a></li>
-        </ul>
       </div>
-      
-    </nav>
-  <!-- </section> -->
+      <ul class="nav navbar-nav navbar-right ">
+        <li><a href="https://github.com/abyhuerta"><i class="bi bi-github"></i></a></li>
+      </ul>
+    </div>
+  </nav>
 
   <section id="header-section">
-    <img  src="img/tinyguy.png">
+    <img src="img/tinyguy.png">
     <h1>Gen QR</h1>
     <h2>Create Your QR Code</h2>
-    <p>Generate custom QR codes for websites, events, promotions, and more. Personalize them to suit your needs and share them with ease.</p>
+    <p>Generate custom QR codes for websites, events, promotions, and more. Personalize them to suit your needs and
+      share them with ease.</p>
   </section>
 
   <section id="create-section">
-    <div></div>
-  <section id="type-of-options">
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#form-url" onclick="showURLTab()"><i class="bi bi-link"></i> URL</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#form-text" onclick="showTextTab()"><i class="bi bi-card-text"></i> Text</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#form-event" onclick="showEventTab()"><i class="bi bi-calendar-event"></i> Event</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#form-wifi" onclick="showWifiTab()"><i class="bi bi-wifi"></i> Wifi</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#form-location" onclick="showLocationTab()"><i class="bi bi-geo-alt"></i> Location</a>
-      </li>
-    </ul>
-  </section>
+    <section id="type-of-options">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#form-url" onclick="showURLTab()"><i class="bi bi-link"></i>
+            URL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#form-text" onclick="showTextTab()"><i class="bi bi-card-text"></i> Text</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#form-event" onclick="showEventTab()"><i class="bi bi-calendar-event"></i> Event</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#form-wifi" onclick="showWifiTab()"><i class="bi bi-wifi"></i> Wifi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#form-location" onclick="showLocationTab()"><i class="bi bi-geo-alt"></i>
+            Location</a>
+        </li>
+      </ul>
+    </section>
 
 
-  <section id="form-section">
-    <div id="home">
-      <h3><i class="bi bi-arrow-up"></i>Choose what you would like to embed<i class="bi bi-arrow-up"></i></h3>
-      <!-- <h4>Choose what you would like to embed..</h4> -->
-    </div>
-    <div id="form-url">
-      <h3>URL</h3>
-      <label for="inputurl" class="form-label">URL Link</label>
-      <div class="input-group mb-3">
-        <span class="input-group-text" id="basic-addon1">🔗</span>
-        <input id="url-form" type="text" class="form-control" placeholder="https://example.com/" aria-label="https://example.com/" aria-describedby="basic-addon1" required>
+    <section id="form-section">
+      <div id="home">
+        <h3><i class="bi bi-arrow-up"></i>Choose what you would like to embed<i class="bi bi-arrow-up"></i></h3>
       </div>
-      <input id ="submit-button" type="submit" onclick="showUrlCode()" placeholder="generate">
-    </div>
-
-    <div id="form-text">
-      <h3>Text</h3>
-      <label for="inputtext" class="form-label">Text</label>
-      <div class="input-group">
-        <span class="input-group-text"><i class="bi bi-body-text"></i></span>
-        <textarea id="text-form" class="form-control" aria-label="With textarea" placeholder="Enter your text here.."
-          required></textarea>
-      </div>
-      <div>
-        <input id ="submit-button" type="submit" onclick="showTextCode()" placeholder="generate">
+      <div id="form-url">
+        <h3>URL</h3>
+        <label for="inputurl" class="form-label">URL Link</label>
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">🔗</span>
+          <input id="url-form" type="text" class="form-control" placeholder="https://example.com/"
+            aria-label="https://example.com/" aria-describedby="basic-addon1" required>
+        </div>
+        <input id="submit-button" type="submit" onclick="showUrlCode()" placeholder="generate">
       </div>
 
-    </div>
+      <div id="form-text">
+        <h3>Text</h3>
+        <label for="inputtext" class="form-label">Text</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-body-text"></i></span>
+          <textarea id="text-form" class="form-control" aria-label="With textarea" placeholder="Enter your text here.."
+            required></textarea>
+        </div>
+        <div>
+          <input id="submit-button" type="submit" onclick="showTextCode()" placeholder="generate">
+        </div>
+      </div>
 
-    <div id="form-event">
-      <h3>Event</h3>
-      <label for="inputtext" class="form-label">Details for Event</label>
-      <div class="input-group">
-        <span class="input-group-text"><i class="bi bi-card-list"></i></span>
-        <textarea class="form-control" aria-label="With textarea" placeholder="Description of event.."
-          id="event-summary" required></textarea>
+      <div id="form-event">
+        <h3>Event</h3>
+        <label for="inputtext" class="form-label">Details for Event</label>
+        <div class="input-group">
+          <span class="input-group-text"><i class="bi bi-card-list"></i></span>
+          <textarea class="form-control" aria-label="With textarea" placeholder="Description of event.."
+            id="event-summary" required></textarea>
+        </div>
+        <label for="inputtext" class="form-label">Start date/time</label>
+        <div>
+          <input type="datetime-local" id="start-event" required>
+        </div>
+        <label for="inputtext" class="form-label">End date/time</label>
+        <div>
+          <input type="datetime-local" id="end-event" required>
+        </div>
+        <div>
+          <label for="event-timezone">Timezone</label>
+          <div class="column large-3">
+            <select name="timezone" id="event-timezone">
+              <option value="" selected>Choose</option>
+              <option value="+000">HAST(Hawaiian)</option>  <!--GMT -10:00 -->
+              <option value="+000">ASKT(Alaskan)</option>   <!--GMT -9:00 -->
+              <option value="+000">PST</option>             <!--GMT -8:00 -->
+              <option value="+000">MST</option>             <!--GMT -7:00 -->
+              <option value="+000">CST</option>             <!--GMT -6:00 -->
+              <option value="+000">EST</option>             <!--GMT -5:00 -->
+            </select>
+          </div>
+        </div>
+        <div>
+          <input id="submit-button" type="submit" onclick="showEventCode()" placeholder="generate">
+        </div>
       </div>
-      <label for="inputtext" class="form-label">Start date/time</label>
-      <div>
-        <input type="datetime-local" id="start-event" required>
+
+      <div id="form-wifi">
+        <h3>Wifi</h3>
+        <label for="encryption">Encryption</label>
+        <div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="wifi-type" id="inlineRadio1" value="WPA" checked>
+            <label class="form-check-label" for="inlineRadio1">WPA</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="wifi-type" id="inlineRadio2" value="WEP">
+            <label class="form-check-label" for="inlineRadio2">WEP</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="wifi-type" id="inlineRadio3" value="unencrypted">
+            <label class="form-check-label" for="inlineRadio3">Unencrypted</label>
+          </div>
+          <div>
+            <label for="wifiname">Network name</label>
+          </div>
+          <div>
+            <input id="wifi-name" class="form-control" type="text" placeholder="Network name.."
+              aria-label="default input example" required>
+          </div>
+          <label for="password">Password</label>
+          <div>
+            <input id="wifi-password" class="form-control" type="text" placeholder="Password (if any).."
+              aria-label="default input example" required>
+          </div>
+          <input id="submit-button" onclick="showWifiCode()" type="submit" placeholder="Generate">
+        </div>
       </div>
-      <label for="inputtext" class="form-label">End date/time</label>
-      <div>
-        <input type="datetime-local" id="end-event" required>
-      </div>
-      <div>
-        <label for="event-timezone">Timezone</label>
-        <div class="column large-3">
-          <select name="timezone" id="event-timezone">
-            <option value="" selected>Choose</option>
-            <option value="+000">HAST(Hawaiian)</option>
-            <!--GMT -10:00 -->
-            <option value="+000">ASKT(Alaskan)</option>
-            <!--GMT -9:00 -->
-            <option value="+000">PST</option>
-            <!--GMT -8:00 -->
-            <option value="+000">MST</option>
-            <!--GMT -7:00 -->
-            <option value="+000">CST</option>
-            <!--GMT -6:00 -->
-            <option value="+000">EST</option>
-            <!--GMT -5:00 -->
+
+      <div id="form-location">
+        <h3>Location</h3>
+        <div>
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="input-Address" placeholder="1234 Main St" required>
+        </div>
+        <div>
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="input-City" placeholder="City Name" required>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="input-State" class="form-select" name="state" required>
+            <option value="" selected>Choose...</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
           </select>
         </div>
-      </div>
-      <div>
-        <input id ="submit-button" type="submit" onclick="showEventCode()" placeholder="generate">
-      </div>
-    </div>
-
-    <div id="form-wifi">
-      <h3>Wifi</h3>
-      <label for="encryption">Encryption</label>
-      <div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="wifi-type" id="inlineRadio1" value="WPA" checked>
-          <label class="form-check-label" for="inlineRadio1">WPA</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="wifi-type" id="inlineRadio2" value="WEP">
-          <label class="form-check-label" for="inlineRadio2">WEP</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="wifi-type" id="inlineRadio3" value="unencrypted">
-          <label class="form-check-label" for="inlineRadio3">Unencrypted</label>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="input-Zip">
         </div>
         <div>
-        <label for="wifiname">Network name</label>
-          </div>
-        <div>
-          <input id="wifi-name" class="form-control" type="text" placeholder="Network name.."
-            aria-label="default input example" required>
+          <input id="submit-button" type="submit" onclick="convertAddressToCoord()">
         </div>
-        <label for="password">Password</label>
-        <div>
-          <input id="wifi-password" class="form-control" type="text" placeholder="Password (if any).."
-            aria-label="default input example" required>
-        </div>
-        <input  id ="submit-button" onclick="showWifiCode()" type="submit" placeholder="Generate">
       </div>
-
-    </div>
-
-    <div id="form-location">
-      <h3>Location</h3>
-      <div>
-        <label for="inputAddress" class="form-label">Address</label>
-        <input type="text" class="form-control" id="input-Address" placeholder="1234 Main St" required>
-      </div>
-      <div>
-        <label for="inputCity" class="form-label">City</label>
-        <input type="text" class="form-control" id="input-City" placeholder="City Name" required>
-      </div>
-      <div class="col-md-4">
-        <label for="inputState" class="form-label">State</label>
-        <select id="input-State" class="form-select" name="state" required>
-          <option value="" selected>Choose...</option>
-          <option value="AL">Alabama</option>
-          <option value="AK">Alaska</option>
-          <option value="AZ">Arizona</option>
-          <option value="AR">Arkansas</option>
-          <option value="CA">California</option>
-          <option value="CO">Colorado</option>
-          <option value="CT">Connecticut</option>
-          <option value="DE">Delaware</option>
-          <option value="FL">Florida</option>
-          <option value="GA">Georgia</option>
-          <option value="HI">Hawaii</option>
-          <option value="ID">Idaho</option>
-          <option value="IL">Illinois</option>
-          <option value="IN">Indiana</option>
-          <option value="IA">Iowa</option>
-          <option value="KS">Kansas</option>
-          <option value="KY">Kentucky</option>
-          <option value="LA">Louisiana</option>
-          <option value="ME">Maine</option>
-          <option value="MD">Maryland</option>
-          <option value="MA">Massachusetts</option>
-          <option value="MI">Michigan</option>
-          <option value="MN">Minnesota</option>
-          <option value="MS">Mississippi</option>
-          <option value="MO">Missouri</option>
-          <option value="MT">Montana</option>
-          <option value="NE">Nebraska</option>
-          <option value="NV">Nevada</option>
-          <option value="NH">New Hampshire</option>
-          <option value="NJ">New Jersey</option>
-          <option value="NM">New Mexico</option>
-          <option value="NY">New York</option>
-          <option value="NC">North Carolina</option>
-          <option value="ND">North Dakota</option>
-          <option value="OH">Ohio</option>
-          <option value="OK">Oklahoma</option>
-          <option value="OR">Oregon</option>
-          <option value="PA">Pennsylvania</option>
-          <option value="RI">Rhode Island</option>
-          <option value="SC">South Carolina</option>
-          <option value="SD">South Dakota</option>
-          <option value="TN">Tennessee</option>
-          <option value="TX">Texas</option>
-          <option value="UT">Utah</option>
-          <option value="VT">Vermont</option>
-          <option value="VA">Virginia</option>
-          <option value="WA">Washington</option>
-          <option value="WV">West Virginia</option>
-          <option value="WI">Wisconsin</option>
-          <option value="WY">Wyoming</option>
-        </select>
-      </div>
-      <div class="col-md-2">
-        <label for="inputZip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="input-Zip">
-      </div>
-      <div>
-        <input id ="submit-button" type="submit" onclick="convertAddressToCoord()">
-      </div>
-    </div>
-    </div>
+    </section>
   </section>
-</section>
 
 
   <section id="result-section">
@@ -254,46 +244,59 @@
       <i class="bi bi-qr-code"></i>
       <p>(none created yet)</p>
     </div>
-    <button id = "download-button" onclick="downloadQR()" disabled>Download</button>
+    <button id="download-button" onclick="downloadQR()" disabled>Download</button>
   </section>
 
   <section id="about-section">
     <div>
       <h3>What is a QR Code?</h3>
-      <p>A QR code, short for Quick Response code, is a two-dimensional barcode that can be scanned and read by smartphones and dedicated QR code readers. It was first developed in Japan by a company called Denso Wave in 1994 to track vehicles during manufacturing. QR codes are square-shaped and consist of black squares arranged on a white background.</p>
-      <p>QR codes can store a variety of information, such as text, URLs, contact information, or other data. When scanned by a QR code reader app on a smartphone or a device with a built-in camera, the encoded information is extracted and displayed to the user. QR codes have become popular for various purposes, including marketing, advertising, mobile payments, ticketing, and authentication, due to their ability to store large amounts of data and their ease of use.</p>
+      <p>A QR code, short for Quick Response code, is a two-dimensional barcode that can be scanned and read by
+        smartphones and dedicated QR code readers. It was first developed in Japan by a company called Denso Wave in
+        1994 to track vehicles during manufacturing. QR codes are square-shaped and consist of black squares arranged on
+        a white background.</p>
+      <p>QR codes can store a variety of information, such as text, URLs, contact information, or other data. When
+        scanned by a QR code reader app on a smartphone or a device with a built-in camera, the encoded information is
+        extracted and displayed to the user. QR codes have become popular for various purposes, including marketing,
+        advertising, mobile payments, ticketing, and authentication, due to their ability to store large amounts of data
+        and their ease of use.</p>
     </div>
     <div>
       <h3>How to Create One</h3>
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
               Pick QR Code Type
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Select what type of QR Code you would like to make. This will specify what the QR Code will do.</div>
+            <div class="accordion-body">Select what type of QR Code you would like to make. This will specify what the
+              QR Code will do.</div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
               Fill out the form
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Then, fill out the form in its entirety. This will ensure that the QR Code has all the information required to function properly!</div>
+            <div class="accordion-body">Then, fill out the form in its entirety. This will ensure that the QR Code has
+              all the information required to function properly!</div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
               Download Code
             </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Lastly, click submit and you will be able to create and download your own QR Code!</div>
+            <div class="accordion-body">Lastly, click submit and you will be able to create and download your own QR
+              Code!</div>
           </div>
         </div>
       </div>
@@ -308,7 +311,7 @@
     <div class="container text-center">
       <div class="row align-items-start">
         <div class="col">
-        <h4>QR Code API</h4>
+          <h4>QR Code API</h4>
           <a href="https://goqr.me/api/doc/"><i class="bi bi-qr-code-scan"></i></a>
         </div>
         <div class="col">
@@ -318,7 +321,6 @@
       </div>
     </div>
   </section>
-
 
   <section id="footer-section">
     <footer id="footer-section">
@@ -333,9 +335,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
