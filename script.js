@@ -1,4 +1,3 @@
-// there is probably a more efficient way for this..
 function showURLTab() {
   document.getElementById('home').style.display = "none";
   document.getElementById("form-url").style.display = "contents";
