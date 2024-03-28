@@ -68,6 +68,7 @@ p{
   border-radius: 5px;
   margin:0 auto 20px auto;
   max-width: 50%;
+  min-width:100%;
   padding:10px;
   text-align: center;
 }
@@ -140,6 +141,7 @@ input[type=submit]{
   border-radius: 5px;
   margin:0 auto 20px auto;
   max-width: 50%;
+  min-width: 90%;
   padding:10px;
   color:#DDF2FD;
 }
@@ -156,6 +158,7 @@ h4{
   color:#164863;
   margin: 20px auto;
   max-width: 50%;
+  min-width: 90%;
   text-align: center;
   background-color:#9BBEC8;
 }
@@ -180,6 +183,7 @@ button{
   border-radius: 5px;
   margin:0 auto 20px auto;
   max-width: 50%;
+  min-width: 90%;
   padding:10px;
   text-align: center;
 }
@@ -189,6 +193,7 @@ button{
   border-radius: 5px;
   margin:0 auto 20px auto;
   max-width: 50%;
+  min-width: 90%;
   padding:10px;
   text-align: center;
 }
