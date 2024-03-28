@@ -1,21 +1,3 @@
-/* 
-  Tell us about your project below!👇
-
-- Which API did you use? Why did you choose that one?
-I used two APIS:
-  1-QR Code: Create an easy to read QR code and URL shortener https://goqr.me/api/
-  2-Nominatim:Provides worldwide forward / reverse geocoding, https://nominatim.org/release-docs/develop/api/Overview/
-I've been intrested in how QR codes work or on how they are made(I still have some questions). There have also been a few times where I wanted to make one but most of them came at a cost or I only had a limited number of free qr codes. This website will let users create unlimited codes!
-
-  - How did you interact with the API, technically?
-  For the QR Code api, I sent a GET request with user input and the formatting for the request varied depending on what the user wanted to encode in the QR code. The API would then return a repsonse containing a source link to the qr code as a PNG. I then created an IMG element making the source link the api's response and appended it to the result section of the site. The QR Code api's parameters to create a location qr code are latitude and longitude coordinates, which I thought are not convenient for the user to have to figure out the coodrinates to make the QR Code. So I formatted the user input to be something more familiar (the traditional address,city,state,zip). Then, I utilized the Nominatim API where one of its features is that you can make a GET request and send it the parameters for the address, and it will return plenty of information about that location(the coordinates included). I then made those coordinates the request and the procress after is the same as the others.
-  
-  - What does your project do/how does it work?
-  First the user should decide what they want to encode: URL link, Text, Event, Wifi login info, or location. Then the user simply fills out the form with the necessary info, and them click submit! The result should be a QRcode that can be saved and ready to use!
-  
-  - If you were going to keep coding this project, what would you build next?
-  I would like to implement the reader portion of the QR Code api, and if the qr code has a URL, I would like for it to check if the website link can be trusted for user safety! I also wanted to be able to show users some data on their codes e.g. how many scans have they gotten.(the api does provide a server for management but it is not free)
-*/
 // there is probably a more efficient way for this..
 function showURLTab() {
   document.getElementById('home').style.display = "none";
