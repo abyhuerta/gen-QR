@@ -1,0 +1,236 @@
+colorpallete{
+  color:#164863;
+  color:#427D9D;
+  color:#9BBEC8;
+  color:#DDF2FD;
+  color:#06293b;
+}
+fonts{
+  font-family: "Pixelify Sans", sans-serif;
+  font-family: "Source Code Pro", monospace;
+  font-family: "Nunito", sans-serif;
+}
+
+body{
+  margin:0px;
+  background-color: #DDF2FD;
+  font-family: "Nunito", sans-serif;
+  position: relative;
+  margin-bottom: 0;
+}
+
+h1,h2,h3{
+  color:#164863;
+  font-family:"Pixelify Sans", sans-serif;
+  margin:20px auto;
+  text-align: center;
+}
+
+.navbar{
+  background-color:#427D9D;
+}
+.navbar a{
+  color:#164863;
+  font-size: 30px;
+}
+
+label{
+  color:#164863;
+}
+
+nav{
+  font-family:"Pixelify Sans", sans-serif;
+}
+
+p{
+  font-size: 20px;
+  text-align:center;
+}
+
+#logo{
+  max-width: 50px;
+}
+
+.navbar{
+  margin-top: 0;
+  background-color: #164863;
+  color:aliceblue;
+}
+.navbar a{
+  color:#DDF2FD;
+}
+
+.navbar-left{
+  text-shadow:3px 3px 5px rgb(0,0,0);
+}
+
+#header-section{
+  border-radius: 5px;
+  margin:0 auto 20px auto;
+  max-width: 50%;
+  padding:10px;
+  text-align: center;
+}
+
+#header-section img{
+  margin-top:20px;
+  display:inline-block;
+  width:250px;
+}
+
+
+#type-of-options{
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+
+
+#result-section,a{
+  text-decoration: none;
+  color:#DDF2FD;
+  border-radius: 5px;
+}
+
+#download-button{
+  margin-bottom:10px;
+}
+
+#header, #form-container{
+  margin-top:20px;
+}
+
+.nav-link{
+  color:#164863;
+  transition-duration:.5s;
+}
+
+.nav-link:hover{
+  background-color: #427D9D;
+  color:#DDF2FD
+}
+
+.nav-link::after{
+  background-color: #427D9D;
+  color:#DDF2FD
+}
+
+select {
+  border-radius: 5px;
+  border:none;
+
+}
+
+input[type=datetime-local]{
+  border-radius: 5px;
+  border:none;
+}
+
+
+input[type=submit]{
+  margin-top: 10px;
+  border:none;
+  border-radius: 5px;
+  background-color:#164863;
+  color:#DDF2FD;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+#form-section{
+  background-color:#427D9D;
+  border-radius: 5px;
+  margin:0 auto 20px auto;
+  max-width: 50%;
+  padding:10px;
+  color:#DDF2FD;
+}
+
+#form-section label{
+  color:#DDF2FD;
+}
+
+h4{
+  text-align: center;
+}
+
+#result-section{
+  color:#164863;
+  margin: 20px auto;
+  max-width: 50%;
+  text-align: center;
+  background-color:#9BBEC8;
+}
+
+#result-section i{
+  font-size: 150px;
+  opacity: 50%;
+}
+
+button{
+  margin-top: 10px;
+  border:none;
+  border-radius: 5px;
+  background-color:#164863;
+  color:#DDF2FD;
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+#about-section{
+  font-family: "Nunito", sans-serif;
+  background-color:#9BBEC8;
+  border-radius: 5px;
+  margin:0 auto 20px auto;
+  max-width: 50%;
+  padding:10px;
+  text-align: center;
+}
+
+#api-section{
+  background-color:#9BBEC8;
+  border-radius: 5px;
+  margin:0 auto 20px auto;
+  max-width: 50%;
+  padding:10px;
+  text-align: center;
+}
+
+#api-section h4{
+  font-family: "Pixelify Sans", sans-serif;
+  color: #164863;
+}
+
+#api-section i{
+  font-size: 80px;
+  color:#164863;
+  transition-duration: .5s;
+}
+
+#api-section i:hover{
+  color:aliceblue;
+}
+
+footer#footer-section{
+  font-family: "Pixelify Sans", sans-serif;
+  margin-top:20px;
+  margin-bottom:0px;
+  bottom: 0px;
+  background-color: #06293b;
+  color: #DDF2FD;
+  text-align:center;
+  width:100%;
+  text-shadow: 3px 3px 5px rgb(0,0,0);
+  height:20vh;
+} 
+
+#footer-section{
+padding-bottom:0;
+}
+
+footer img{
+    display:inline-block;
+    width:150px;
+}
+
+
+#api-link,#github-link{
+  font-size: 100px;
+}
