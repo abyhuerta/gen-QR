@@ -34,10 +34,6 @@ h1,h2,h3{
   font-size: 30px;
 }
 
-label{
-  color:#164863;
-}
-
 nav{
   font-family:"Pixelify Sans", sans-serif;
 }
@@ -47,15 +43,12 @@ p{
   text-align:center;
 }
 
-#logo{
-  max-width: 50px;
-}
-
 .navbar{
   margin-top: 0;
   background-color: #164863;
   color:aliceblue;
 }
+
 .navbar a{
   color:#DDF2FD;
 }
@@ -67,8 +60,6 @@ p{
 #header-section{
   border-radius: 5px;
   margin:0 auto 20px auto;
-  max-width: 50%;
-  min-width:100%;
   padding:10px;
   text-align: center;
 }
@@ -121,6 +112,16 @@ select {
 
 }
 
+#form-section{
+  background-color:#427D9D;
+  border-radius: 5px;
+  margin:0 auto 20px auto;
+  padding:10px;
+  color:#DDF2FD;
+}
+
+
+
 input[type=datetime-local]{
   border-radius: 5px;
   border:none;
@@ -136,14 +137,22 @@ input[type=submit]{
   font-family: "Pixelify Sans", sans-serif;
 }
 
-#form-section{
-  background-color:#427D9D;
-  border-radius: 5px;
-  margin:0 auto 20px auto;
-  max-width: 50%;
-  min-width: 90%;
-  padding:10px;
-  color:#DDF2FD;
+@media screen and (max-width: 768px) {
+#form-section,#header-section,#result-section,#about-section,#api-section{
+  width:90%;
+}
+  footer#footer-section{
+    height:25vh;
+  }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 769px) {
+  #form-section,#header-section,#result-section,#about-section,#api-section{
+    width:50%;
+    margin-bottom:0px;
+    bottom: 0px;
+  } 
 }
 
 #form-section label{
@@ -157,8 +166,6 @@ h4{
 #result-section{
   color:#164863;
   margin: 20px auto;
-  max-width: 50%;
-  min-width: 90%;
   text-align: center;
   background-color:#9BBEC8;
 }
@@ -182,8 +189,6 @@ button{
   background-color:#9BBEC8;
   border-radius: 5px;
   margin:0 auto 20px auto;
-  max-width: 50%;
-  min-width: 90%;
   padding:10px;
   text-align: center;
 }
@@ -192,8 +197,6 @@ button{
   background-color:#9BBEC8;
   border-radius: 5px;
   margin:0 auto 20px auto;
-  max-width: 50%;
-  min-width: 90%;
   padding:10px;
   text-align: center;
 }
@@ -231,10 +234,9 @@ padding-bottom:0;
 }
 
 footer img{
-    display:inline-block;
-    width:150px;
+  display:inline-block;
+  width:150px;
 }
-
 
 #api-link,#github-link{
   font-size: 100px;
