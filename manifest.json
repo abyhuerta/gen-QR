@@ -3,9 +3,9 @@
     "name": "QR Gen",
     "icons": [
       {
-        "src": "/images/icons-vector.svg",
-        "type": "image/svg+xml",
-        "sizes": "512x512"
+        "src": "img/tinyguy.png",
+        "type": "image/png",
+        "sizes": "1024x753"
       }
     ],
     "id": "/?source=pwa",
@@ -17,13 +17,13 @@
     "description": "A free QR Code Generator",
     "screenshots": [
       {
-        "src": "/img/screenshot2.png",
+        "src": "img/screenshot2.png",
         "type": "image/png",
         "sizes": "1284x2367",
         "form_factor": "narrow"
       },
       {
-        "src": "/img/screenshot1.png",
+        "src": "img/screenshot1.png",
         "type": "image/png",
         "sizes": "1284x2610",
         "form_factor": "narrow"
