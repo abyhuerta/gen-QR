@@ -5,7 +5,8 @@
       {
         "src": "img/tinyguy.png",
         "type": "image/png",
-        "sizes": "1024x753"
+        "sizes": "1024x753",
+        "purpose": "maskable"
       }
     ],
     "id": "/?source=pwa",
