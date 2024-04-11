@@ -3,15 +3,15 @@
     "name": "QR Gen",
     "icons": [
       {
-        "src": "img/tinyguy.svg",
-        "type": "image/svg+xml",
-        "sizes": "1024x753"
+        "src": "img/tinyguy.png",
+        "type": "image/png",
+        "sizes": "753x753",
+        "purpose": "maskable"
       },
       {
         "src": "img/tinyguy.png",
         "type": "image/png",
-        "sizes": "1024x753",
-        "purpose": "maskable"
+        "sizes": "753x753"
       }
     ],
     "id": "/?source=pwa",
